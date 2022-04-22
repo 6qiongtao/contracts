@@ -1,2 +1,2 @@
-# eth-contracts
-eth smart contracts
+# contracts
+smart contracts

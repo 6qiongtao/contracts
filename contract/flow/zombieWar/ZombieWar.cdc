@@ -1,5 +1,5 @@
-import NonFungibleToken from 0x631e88ae7f1d7c20
-import MetadataViews from 0x631e88ae7f1d7c20
+import NonFungibleToken from "./NonFungibleToken.cdc"
+import MetadataViews from "./MetadataViews.cdc"
 
 pub contract ZombieWar:NonFungibleToken{
     pub var totalSupply:UInt64

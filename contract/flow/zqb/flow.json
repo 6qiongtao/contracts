@@ -1,0 +1,37 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "testnet-account",
+			"serviceAccount-old": "emulator-account"
+		}
+	},
+	"contracts": {
+		"ZQB" : "./ZQB.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "000000000000000",
+			"key": "0000000c05f9db55ca4ffac459754346c002f506692b4f87c12cf5f0e5694b4",
+			"chain":"flow-emulator"
+		},
+		"testnet-account": {
+			"address": "000000000000000",
+			"key": "0000000c05f9db55ca4ffac459754346c002f506692b4f87c12cf5f0e5694b4",
+			"chain":"flow-testnet"
+		}
+	},
+	"deployments": {
+		"emulator" : {
+			"emulator-account": ["ZQB"]
+		},
+		"testnet" : {
+			"testnet-account": ["ZQB"]
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"ZombieWar":"./contracts/ZombieWar.cdc"
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "b778a4d100000000",
+			"key": "0000000c05f9db55ca4ffac459754346c002f506692b4f87c12cf5f0e5694b4"
+		},
+		"testnet-account": {
+			"address": "b778a4d100000000",
+			"key": "0000000c05f9db55ca4ffac459754346c002f506692b4f87c12cf5f0e5694b4"
+		},
+		"testnet-account2": {
+			"address": "b778a4d100000000",
+			"key": "0000000c05f9db55ca4ffac459754346c002f506692b4f87c12cf5f0e5694b4"
+		}
+	},
+	"deployments": {
+		"testnet": { "testnet-account": ["ZombieWar"] }
+	}
+}
